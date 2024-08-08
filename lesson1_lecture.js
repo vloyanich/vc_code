@@ -76,7 +76,7 @@ let message = "Hello, World!"; */
 /* let q, w, e;
 let a = 5, b = 1440, c = a + b;
 console.log(c) */
-
+ffffffff
 
 //Але краще для синтаксису робити усе разом
 //var message = 'Hello world';
