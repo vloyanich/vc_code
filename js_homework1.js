@@ -137,26 +137,87 @@ console.log('10. result is - ' + task10)   // результат -  2
 
 
 
+// 11)  '10' + (5 === 6);
+
+let task11 = '10' + (5 === 6);
+console.log('11. result is - ' + task11)   // результат -  10false
+ 
+// відбувається конкатенація рядка "10" і булевого результату (5 === 6) = false, перетвореного у рядок 
 
 
 
 
-/*
 
-'10' + (5 === 6);
+// 12)  null == ''
 
-null == ''
+let task12 = null == ''
+console.log('12. result is - ' + task12)   // результат -  false
+ 
+// null не рівний пустому рядку
 
-3 ** (9 / 3);
 
-!!'false' == !!'true'
 
-0 || '0' && 1
+// 13)  3 ** (9 / 3);
 
-(+null == false) < 1;
+let task13 = 3 ** (9 / 3);
+console.log('13. result is - ' + task13)   // результат -  27
+ 
+// 3 в степені  3
 
-false && true || true
 
-false && (false || true);
 
-(+null == false) < 1 ** 5;   */
+
+// 14)  !!'false' == !!'true'
+
+let task14 = !!'false' == !!'true'
+console.log('14. result is - ' + task14)   // результат -  true
+ 
+// <<Оператор !!   Думаю, вы уже знакомы с логическим оператором "НЕ” - !. Так вот оператор !! действует следующим образом: первый знак ! приводит значение к логическому и инвертирует его. Например, !true равняется false. Второй оператор ! снова инвертирует полученное значение. В нашем примере !false приравнивается к true.>>
+// подвійне  заперечення, застосоване до не пустого string, тобто !!1=!!1, 1=1
+
+
+// 15) 0 || '0' && 1
+
+let task15 = 0 || '0' && 1
+console.log('15. result is - ' + task15)   // результат -  1
+ 
+// 0 або '0' i  1 ,  i вище за або, тобто 0 || ('0' && 1) , де ('0' && 1) = (1 && 1) = true - і повертає отстанній true - 1.   
+// далі 0 || 1 = true, повертає останнє true значення, тобто 1
+
+
+
+// 16) (+null == false) < 1;
+
+let task16 = (+null == false) < 1;
+console.log('16. result is - ' + task16)   // результат -  false
+ 
+// <<Однак, унарний плюс виконує перетворення до числа (coercion) для значень, які не є числами. >> , тоді +null = 0
+//  0 == false - true.    true < 1 - false , бо 1<1 . результат -  false
+
+
+// 17) false && true || true
+
+let task17 = false && true || true
+console.log('17. result is - ' + task17)   // результат -  true
+ 
+//  (false && true)  = false
+// false|| true = true
+
+
+
+// 18) false && (false || true);
+
+let task18 = false && (false || true);
+console.log('18. result is - ' + task18)   // результат -  false
+ 
+//  (false || true)  = true       false && true  = false
+
+
+
+// 19) (+null == false) < 1 ** 5;   */
+
+let task19 = (+null == false) < 1 ** 5;   
+console.log('19. result is - ' + task19)   // результат -  false
+  
+// (+null == false)= 0 == false = 0 ==0 - true.  1 ** 5 = 1   , true  < 1  = 1 < 1  - false
+
