@@ -221,3 +221,8 @@ console.log('19. result is - ' + task19)   // результат -  false
   
 // (+null == false)= 0 == false = 0 ==0 - true.  1 ** 5 = 1   , true  < 1  = 1 < 1  - false
 
+
+
+
+
+branch js_homework3
