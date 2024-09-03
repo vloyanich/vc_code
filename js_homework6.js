@@ -46,9 +46,14 @@ const company = {
         function findValueByKey(companyName) {
             for ( i=0 ; i < company.clients.length; i++) {
                 if (company.clients[i].name === companyName){
-                  console.log(company.clients[i]);
-            }}}
+                   
+                console.log(company.clients[i]);
+                  break;
+                   
+            } 
+            //else {console.log("Немає subCompany " + companyName + ". Можливо це subSubCompany ?") };
+        }}
 
             let result = findValueByKey ('Клієнт 1');
-            console.log(result); 
+     
             
