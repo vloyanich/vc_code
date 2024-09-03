@@ -43,17 +43,12 @@ const company = {
     ]
   };
 
-  //console.log(company.name); 
+        function findValueByKey(companyName) {
+            for ( i=0 ; i < company.clients.length; i++) {
+                if (company.clients[i].name === companyName){
+                  console.log(company.clients[i]);
+            }}}
 
-   company.findValueByKey = function findValueByKey(companyName) {
-    for (let i in company) {
-        if (companyName == company.name) { 
-   console.log (companyName + ' is present');}
-   else {console.log (companyName + ' is NOT present')
-}}}
-company.findValueByKey ('Клієнт 2');
-
-
-/* console.log (company.find((el) => {
-    return el === 'Клієнт 2';
-  })) */
+            let result = findValueByKey ('Клієнт 1');
+            console.log(result); 
+            
