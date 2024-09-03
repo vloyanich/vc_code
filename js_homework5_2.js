@@ -18,7 +18,7 @@ services.price = function  price() {
     }}}
 
  
-services.maxPrice = function  maxPrice() {
+services.maxPrice = function  maxPrice() { 
             for (let k in services) {
            if (Number.parseInt(services[k]) > max) {max = Number.parseInt(services[k])} ;  
             }}

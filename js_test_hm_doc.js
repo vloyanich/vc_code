@@ -312,7 +312,7 @@ book.newProperty  = "Нова властивість"
 
 book.getInfo() */
 
-
+/* 
 let sum = 0
 let max = 0
 let min = 10000
@@ -357,3 +357,219 @@ console.log ("MaxPrice " + max);
 services.minPrice();
 console.log ("MinPrice " + min);
 
+ */
+
+
+
+
+
+/* let str = "DataTypes";
+let letter = str[1]; 
+console.log(letter);  //    a
+/*
+
+ let text = "Джаваскріпт - це цікаво";
+let length = text.length;
+console.log(length);  //23
+
+
+var result = "qwerty"/0;
+console.log(nan) //ReferenceError: nan is not defined
+
+var guessWho = 3.14;
+guessWho = 'А тепер тут строка';
+guessWho = false;
+guessWho = 8.97;
+console.log(guessWho) //8.97
+
+
+const num = 68;
+const str1 = "Borsh";
+const result = num + str1; 
+console.log(result) */ //68Borsh
+
+
+
+/* 
+
+var result = "30" - 3;
+console.log(result);  // 27
+
+
+let n = 5;
+ n *= 4 + 9;
+ console.log(n);  //65
+
+
+
+var a = 9;
+var b = 7;
+var c = a = b;
+console.log(c) //7
+
+
+var number = 80;
+number % = 5;
+console.log(number); //SyntaxError: Unexpected token '='
+
+
+console.log(3 !== '03'); //true
+
+
+console.log((+undefined)); /NaN
+ */
+
+
+
+
+
+
+
+
+
+/* 
+let sex = 'female';
+let birthday = 29;
+let discount;
+if (sex === 'male'){
+    discount = (birthday >= 25 ) ? "30%" : "10%";
+} else if (sex === 'female'){
+    discount = (birthday === 19) ? "30%" : "10%";
+} else {
+    discount = (birthday === 7) ? "10%" : "5%";
+} 
+console.log(discount) //10%
+
+
+
+console.log( 1 && 2 && null && 3 && undefined); //null
+
+
+console.log( (null || -1 && 1)  ); //1
+/* 
+
+// Яке буде останнє значення?
+var i = 0;
+do {
+    i += 4;
+    console.log("i = " + i);
+} while (i < 11); //12
+ */
+
+
+/* // Яке буде останнє значення?
+var i = 0;
+do {
+    i += 4;
+    console.log("i = " + i);
+} while (i < 11);
+ */ 
+
+
+
+
+
+//* Завдання 1:
+
+//Вирахуйте значення площі трапеції на основі наданих значень.
+//Виведіть результат 
+
+//Формула: https://www.elitclass.com.ua/components/com_jshopping/files/img_products/full_a91.jpg
+
+
+/* var a = 6; // перша основа
+var b = 9; // друга основа
+var h = 4; // висота
+var s=0;
+
+s=((a+b)/2)*h;
+console.log (s) // 30 */
+
+
+/* 
+let productPrice1 = 101.5; // ціна 1го продукту
+let productPrice2 = 50.25; // ціна 2го продукту
+let productPrice3 = 10.11; // ціна 3го продукту
+
+let productQuantity1 = 5;  // кількість одениць 1го продукту на складі 
+let productQuantity2 = 9;  // кількість одениць 2го продукту на складі 
+let productQuantity3 = 15; // кількість одениць 3го продукту на складі 
+
+let S=0
+S=((productPrice1*productQuantity1) +(productPrice2*productQuantity2) + (productPrice3*productQuantity3))/ (productQuantity1+productQuantity2+productQuantity3)
+console.log (S)  // 38.324137931034485
+ */
+
+
+
+/* var grade = prompt("Введіть вашу оцінку (A, B, C, D, або F)");
+
+switch (grade) {
+    case   "A"  :    alert("Відмінно")  ; break;
+    case   "B"  :    alert("Добре")  ; break; 
+    case   "C"  :    alert("Задовільно")  ; break;
+    case   "D"  :    alert("Незадовільно")  ; break;
+    case   "F"  :    alert("Не склав")  ; break;
+    default   :  "Невірно введена оцінка"   ;
+} */
+
+/* 
+if (grade == "A") {
+    alert("Відмінно");
+} else if (grade == "B") {
+    alert("Добре");
+} else if (grade == "C") {
+    alert("Задовільно");
+} else if (grade == "D") {
+    alert("Незадовільно");
+} else if (grade == "F") {
+    alert("Не склав");
+} else {
+    alert("Невірно введена оцінка");
+} */
+
+
+
+
+    /* Завдання 4:
+
+За допомогою цикла for виведіть всі числа котрі діляться на 4 між 0 и 50 
+
+*/
+/* 
+for (let i=1; i<=50; i++) {
+if (i % 4 ==0) {console.log (i)}
+} */
+
+
+
+/* Завдання 5:
+
+Створіть функцію min(a, b), яка повертає менше число з чисел а и b без використання бібліотеки Math
+
+*/
+//function (a,b) {}
+
+var arr = [
+    { name: "John Snow", age: 45 },
+    { name: "Cersei Lannister", age: 32 },
+    { name: "Daenerys Targaryen", age: 18 },
+    { name: "Jorah Mormont", age: 28 }
+  ];
+  
+  console.log(arr.find((el) => {
+    return el.age === 18;
+  }))
+
+
+
+  function factorial(n) {
+    let result = 1;
+    for (let i = 1; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+  }
+  
+  const number = 5;
+  console.log(`Факторіал ${number} дорівнює ${factorial(number)}`);
