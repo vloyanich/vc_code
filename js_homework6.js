@@ -43,17 +43,37 @@ const company = {
     ]
   };
 
-        function findValueByKey(companyName) {
-            for ( i=0 ; i < company.clients.length; i++) {
+  let a = 0;
+       function findValueByKey(companyName) {
+            for (   i = 0 ; i < company.clients.length; i++) {
                 if (company.clients[i].name === companyName){
                    
-                console.log(company.clients[i]);
-                  break;
-                   
-            } 
-            //else {console.log("Немає subCompany " + companyName + ". Можливо це subSubCompany ?") };
-        }}
+              //  console.log(company.clients[i]);
+                  ;
+                  if (company.clients[i].partners) 
+                    {
+                        console.log("Властивість company.clients[" + i + "].partners існує");
+                        a = company.clients[i].partners;
+                        console.log(a);
+                       console.log(a.length);
+                       }
+                       
+                       for ( j = 0 ; j < a.length; j++) {
+                        if (a[j].name === companyName){
+               
+                            console.log(a[j]);}
 
+                        }
+
+                       // console.log(company.clients[i].partners);
+                      // if (company.clients[i].partners.name === companyName){
+                       //    console.log(company.clients[i]);
+                           ;
+                    }
+                    else {
+                        console.log("Властивість company.clients[i].partners не знайдено"); }
+                    }}                       
+            
             let result = findValueByKey ('Клієнт 1');
      
-            
+
