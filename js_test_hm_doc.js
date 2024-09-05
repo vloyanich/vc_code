@@ -550,7 +550,7 @@ if (i % 4 ==0) {console.log (i)}
 */
 //function (a,b) {}
 
-var arr = [
+/* var arr = [
     { name: "John Snow", age: 45 },
     { name: "Cersei Lannister", age: 32 },
     { name: "Daenerys Targaryen", age: 18 },
@@ -572,4 +572,13 @@ var arr = [
   }
   
   const number = 5;
-  console.log(`Факторіал ${number} дорівнює ${factorial(number)}`);
+  console.log(`Факторіал ${number} дорівнює ${factorial(number)}`); */
+
+
+
+  var str = "миші, щури, знову миші, хом'яки, ховрахи";
+var pattern = /щури/; // це RegExp. Слеші /.../ говорять JavaScript про те, що це регулярний вираз. Вони відіграють тут ту саму роль, що й лапки для позначення рядків.
+console.log("Тип регулярного виразу: " + typeof pattern);
+console.log("Знаходимо на якому індексі? " + str.search(pattern)); // Шукаємо шаблон у рядку
+console.log("А якщо не знайшли ? " + str.search(/кіт/)); 
+console.log("Чи знайшли ми цей паттерн, шаблон у наданому реченні? " + pattern.test(str)); 

@@ -53,17 +53,21 @@ const company = {
                   if (company.clients[i].partners) 
                     {
                         console.log("Властивість company.clients[" + i + "].partners існує");
-                        a = company.clients[i].partners;
-                        console.log(a);
-                       console.log(a.length);
-                       }
-                       
-                       for ( j = 0 ; j < a.length; j++) {
-                        if (a[j].name === companyName){
-               
-                            console.log(a[j]);}
+                          a = company.clients[i].partners;
+                          return a;
+                      //  console.log(a);
+                     //  console.log(a.length); 
 
-                        }
+                     console.log(a);
+                     console.log(a.length); 
+                     for ( j = 0 ; j < a.length; j++) {
+                       if (a[j].name === companyName){
+               
+                           console.log(a[j]);}} 
+                             }      
+                       
+
+                        
 
                        // console.log(company.clients[i].partners);
                       // if (company.clients[i].partners.name === companyName){
@@ -72,8 +76,7 @@ const company = {
                     }
                     else {
                         console.log("Властивість company.clients[i].partners не знайдено"); }
-                    }}                       
-            
-            let result = findValueByKey ('Клієнт 1');
-     
+                    }}
 
+
+let result = findValueByKey ('Клієнт 1');
