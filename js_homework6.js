@@ -45,35 +45,42 @@ const company = {
 
   let a = 0;
        function findValueByKey(companyName) {
-            for (   i = 0 ; i < company.clients.length; i++) {
-                if (company.clients[i].name === companyName){
-                   
-              //  console.log(company.clients[i]);
-                  ;
-                  if (company.clients[i].partners) 
-                    {
-                        console.log("Властивість company.clients[" + i + "].partners існує");
-                        a = company.clients[i].partners;
-                        console.log(a);
-                       console.log(a.length);
-                       }
-                       
-                       for ( j = 0 ; j < a.length; j++) {
-                        if (a[j].name === companyName){
-               
-                            console.log(a[j]);}
-
-                        }
-
-                       // console.log(company.clients[i].partners);
-                      // if (company.clients[i].partners.name === companyName){
-                       //    console.log(company.clients[i]);
-                           ;
-                    }
-                    else {
-                        console.log("Властивість company.clients[i].partners не знайдено"); }
-                    }}                       
+        for (const findClient of company.clients) {
             
-            let result = findValueByKey ('Клієнт 1');
-     
+            if (findClient.name === companyName){   
+                console.log("Властивість company.clients " + companyName + " існує"); 
+               console.log(findClient);  
+            }
+           // else {console.log("Властивість company.clients.partners - " + companyName + " не знайдено");  }
 
+          // console.log(findClient.partners); 
+
+               if (findClient.partners)      { 
+                        for (const partner of findClient.partners) {
+                            if (partner.name === companyName){
+
+                        console.log("Властивість company.clients.partners " + companyName + "  існує");
+                        console.log(partner); 
+                       //console.log(partner.partners) ; 
+
+                        
+                         if (partner.partners)  
+                              {    for (const partnerSub of partner.partners){
+                                     if (partnerSub.name === companyName)
+         //console.log(partnerSub);
+       // console.log(partnerSub.name );
+                                        
+                                  console.log("Властивість company.clients.partners.partners " + companyName + "  існує");
+                                 //console.log(partnerSub);
+
+                    
+                              }
+                              }
+
+                            }}}
+                        }
+        }  
+            let result = findValueByKey ('Клієнт 1.2'); 
+      
+
+  
