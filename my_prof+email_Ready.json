@@ -1,0 +1,59 @@
+[
+	{
+			"baseURL_HW13" : "https://qauto2.forstudy.space/api",
+			"name": "Goodname",
+			"email_new":"Good.email111232@test.com"	
+	},
+
+{			"baseURL_HW13" : "https://qauto2.forstudy.space/api",
+			"name":"Vita",
+			"email_new":"testtest311122.com"
+	},
+{			"baseURL_HW13" : "https://qauto2.forstudy.space/api",
+			"name": "V",
+			"email_new":"email111232@testcom"	
+	},
+{			"baseURL_HW13" : "https://qauto2.forstudy.space/api",
+			"name": "111",
+			"email_new":"Good.email113122@test.ccccom"	
+	},
+{			"baseURL_HW13" : "https://qauto2.forstudy.space/api",
+			"name": "  ",
+			"email_new":" @test111322.com"	
+	},
+{			"baseURL_HW13" : "https://qauto2.forstudy.space/api",
+			"name": 222222,
+			"email_new":"-hi-email111322@test.com"	
+	},
+
+
+
+
+
+	{
+			"baseURL_HW13" : "https://qauto.forstudy.space/api",
+			"name": "Goodname",
+			"email_new":"Good.email131122@test.com"	
+	},
+
+{			"baseURL_HW13" : "https://qauto.forstudy.space/api",
+			"name":"Vita",
+			"email_new":"testtest131122.com"
+	},
+{			"baseURL_HW13" : "https://qauto.forstudy.space/api",
+			"name": "V",
+			"email_new":"email111322@testcom"	
+	},
+{			"baseURL_HW13" : "https://qauto.forstudy.space/api",
+			"name": "111",
+			"email_new":"Good.email131122@test.ccccom"	
+	},
+{			"baseURL_HW13" : "https://qauto.forstudy.space/api",
+			"name": "  ",
+			"email_new":" @test113122.com"	
+	},
+{			"baseURL_HW13" : "https://qauto.forstudy.space/api",
+			"name": 222222,
+			"email_new":"-hi-email131122@test.com"	
+	}
+] 
